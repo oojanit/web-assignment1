@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+
+    <script type="text/javascript" language="javascript">
+    function opentab(menuname){
+      document.getElementById("vision").style.display = "none";
+      document.getElementById("mission").style.display = "none";
+      document.getElementById(menuname).style.display = "block";
+      }
+    </script>
+
+    <style>
+    body{
+      color: gray;
+      margin: 0;
+    }
+    a{
+      color: black;
+      text-decoration: none;
+    }
+    .header1{
+      text-align: center;
+      width: 100%;
+      height: 80px;
+      padding-top: 35px;
+      font-size: 2rem;
+    }
+    .fa-chart-bar{
+      display: inline;
+    }
+    .headertitle{
+      display: inline;
+    }
+    .navigator{
+      width: 100%;
+      text-align: center;
+      border-top: 0.1px solid gray;
+      border-bottom: 0.1px solid gray;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    li{
+      display: inline;
+      padding: 5px 30px 5px 30px;
+    }
+    .Home{
+      width:100%;
+      height: 110px;
+      background-image: url(https://cdn.pixabay.com/photo/2015/09/04/23/13/blurry-923065_960_720.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      text-align: center;
+    }
+    .hometitle{
+      font-size: 1.6rem;
+      color: white;
+    }
+    .homecontent{
+      font-size: 1rem;
+      color: white;
+    }
+    .Features{
+      margin-top: 50px;
+      margin-bottom: 50px;
+      padding-left: 100px;
+      padding-right: 100px;
+      display: grid;
+      grid-column: 1fr, 1fr;
+    }
+    .featuretitle{
+      font-size: 1.3rem;
+      font-weight: lighter;
+      display: inline;
+    }
+    .fa-anchor{
+      font-size: 2rem;
+      color: grey;
+    }
+    .fa-cog{
+      font-size: 2rem;
+      color: grey;
+    }
+    .features1{
+      grid-column: 1/2;
+      margin: 20px;
+      text-align: justify;
+    }
+    .features2{
+      grid-column: 2/3;
+      margin: 20px;
+      text-align: justify;
+    }
+    .featurecontent{
+      margin-top: 30px;
+      color: darkgray;
+    }
+    .activities{
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+    .activitiesbanner{
+      background-image: url(https://ak1.picdn.net/shutterstock/videos/25306631/thumb/1.jpg);
+      height: 80px;
+      padding-top: 50px;
+      color: white;
+      text-align: center;
+    }
+    .activitiesgrid{
+      margin-top: 50px;
+      display: grid;
+      grid-column: 1fr 1fr;
+      grid-row: 1fr 1fr;
+      grid-gap: 25px;
+    }
+    .activitiesgridcontent1{
+      grid-column: 1/2;
+      grid-row: 1/2;
+      border: 1px solid darkgrey;
+      padding: 10px;
+    }
+    .activitiesgridcontent2{
+      grid-column: 2/3;
+      grid-row: 1/2;
+      border: 1px solid darkgrey;
+      padding: 10px;
+    }
+    .activitiesgridcontent3{
+      grid-column: 1/2;
+      grid-row: 2/3;
+      border: 1px solid darkgrey;
+      padding: 10px;
+    }
+    .activitiesgridcontent4{
+      grid-column: 2/3;
+      grid-row: 2/3;
+      border: 1px solid darkgrey;
+      padding: 10px;
+    }
+    .activitiespicture{
+      display: inline;
+      float: left;
+      margin-right: 15px;
+    }
+    .activityname{
+      display: inline;
+      color: skyblue;
+      text-align: left;
+      line-height: 1.2rem;
+    }
+    .activitycontent{
+      display: block;
+      text-align: left;
+      margin-top: 10px;
+    }
+    .companywrapper{
+      padding-left: 100px;
+      padding-top: 50px;
+      margin-right: 100px;
+      margin-bottom: 70px;
+    }
+    .company{
+      display: inline-grid;
+      grid-template-columns: auto auto 270px;
+      grid-gap: 40px;
+    }
+    .companypicture{
+      grid-column: 1/2;
+    }
+    .companycontent{
+      grid-column: 2/3;
+    }
+    .companytitle{
+      display: block;
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+    .readmore{
+      margin-top: 30px;
+      float: right;
+      border: 1px solid darkgrey;
+      background-color: white;
+      padding: 10px 15px 10px 15px;
+    }
+    .companymenu{
+      margin: 0 0 0 0;
+      padding: 0 0 0 0;
+    }
+    .tabmenu{
+      grid-column: 3/4;
+      border: 1px solid darkgrey;
+      height: 400px;
+      padding: 0px 0px 0px 0px;
+    }
+    .menutab{
+      background-color: white;
+      width: 131px;
+      height: 50px;
+      text-align: center;
+      margin: 0 0 0 0;
+      padding: 0 0 0 0;
+      border: none;
+    }
+    .menutab:focus{
+      background-color: darkgrey;
+      outline: none;
+    }
+    .tabcontent{
+      margin: 10px;
+      font-size: 0.9rem;
+    }
+    .contact{
+      padding: 0 100px 100px 100px;
+      display: inline-grid;
+      grid-template-columns: 400px auto;
+      grid-gap: 40px;
+      height: 600px;
+    }
+    .contactform{
+      text-align: right;
+      grid-column: 1/2;
+    }
+    .contactus{
+      font-size: 1.4rem;
+    }
+    .contactform1{
+      margin-top: 30px;
+    }
+    input{
+      width: 90%;
+      margin: 0 0 15px 0;
+      padding: 10px 0 10px 2px;
+    }
+    #input2{
+      width: 90%;
+    }
+    .sendit{
+      float: right;
+      margin-top: 10px;
+      border: 1px solid darkgrey;
+      background-color: white;
+      padding: 10px 15px 10px 15px;
+    }
+    .contactpic{
+      grid-column: 2/3;
+      overflow: hidden;
+    }
+    </style>
+
+  </head>
+  <body>
+    <div class="header1">
+      <i class="far fa-chart-bar"></i>
+      <span class="headertitle"> PRO LINE</span>
+    </div>
+    <div class="navigator">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#activities">Activities</a></li>
+        <li><a href="#company">Company</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="Home">
+      <a name="home"></a>
+      <span class="hometitle">Home Work</span><br><br>
+      <span class="homecontent">"great web design without functionality is like a<br> sports car with no engine." Paul Cookson</span>
+    </div>
+    <div class="Features">
+      <a name="features"></a>
+      <div class="features1">
+        <i class="fas fa-anchor"></i>
+        <div class="featuretitle">
+          Cras pretium diam ut metus
+        </div>
+        <div class="featurecontent">
+          Sed interdum, purus vulputate congue luctus, lorem massa dignissim nisi, sed condimentum nibh lorem quis lorem. Nulla sed erat dignissim, tincidunt ante ac, egestas turpis.
+        </div>
+      </div>
+      <div class="features2">
+        <i class="fas fa-cog"></i>
+        <div class="featuretitle">
+          Cras pretium diam ut metus
+        </div>
+        <div class="featurecontent">
+          Phasellus tristique, sapien quis mattis pellentesque, felis turpis placerat turpis, nec viverra quam nisl at velit. Pellentesque iaculis convallis egestas.<br>
+          <br>Nunc ut elit velit mollis sodales. Ut non mauris ut ligula mattis consectetur. Aenean augue arcu, rhoncus at nibh nec, lacinia blandit nulla.
+        </div>
+      </div>
+    </div>
+    <div class="activities">
+      <a name="activities"></a>
+      <div class="activitiesbanner">
+        Activities
+      </div>
+      <div class="activitiesgrid">
+        <div class="activitiesgridcontent1">
+          <div class="activitiespicture">
+            <img src="https://picsum.photos/300?random=1" width="100px">
+          </div>
+          <span class="activityname">Lorem ipsum dolor sit amet</span>
+          <span class="activitycontent">Eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+        </div>
+        <div class="activitiesgridcontent2">
+          <div class="activitiespicture">
+            <img src="https://picsum.photos/300?random=2" width="100px">
+          </div>
+          <span class="activityname">Lorem ipsum dolor sit amet</span>
+          <span class="activitycontent">Eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+        </div>
+        <div class="activitiesgridcontent3">
+          <div class="activitiespicture">
+            <img src="https://picsum.photos/300?random=3" width="100px">
+          </div>
+          <span class="activityname">Lorem ipsum dolor sit amet</span>
+          <span class="activitycontent">Eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+        </div>
+        <div class="activitiesgridcontent4">
+          <div class="activitiespicture">
+            <img src="https://picsum.photos/300?random=4" width="100px">
+          </div>
+          <span class="activityname">Lorem ipsum dolor sit amet</span>
+          <span class="activitycontent">Eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+        </div>
+      </div>
+    </div>
+    <div class="companywrapper">
+    <div class="company">
+      <a name="company"></a>
+      <div class="companypicture">
+        <img src="https://picsum.photos/500?random=5" width="350px">
+      </div>
+      <div class="companycontent">
+        <span class="companytitle">Our Company</span>
+        <span class="companycontents">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillnulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+        <button class="readmore">Read More</button>
+      </div>
+      <div class="tabmenu">
+      <div class="companymenu">
+        <button class="menutab" onclick="opentab('vision');">Vision</button>
+        <button class="menutab" onclick="opentab('mission');">Mission</button>
+      </div>
+      <div id="vision" class="tabcontent">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br><br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+      <div id="mission" class="tabcontent" style="display:none">
+        asdfaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaa Lorem ipsum dolor sit amet, consent mollit anim id est laborum.
+      </div>
+    </div>
+    </div>
+  </div>
+    <div class="contact">
+      <a name="contact"></a>
+      <div class="contactform">
+        <span class="contactus">Contact Us</span>
+        <form class="contactform1" method="get">
+          <input type="text" name="Name" placeholder="Name" id="input1"><br>
+          <input type="email" name="Email" placeholder="Email" id="input1"><br>
+          <textarea name="message" rows="8" placeholder="Message" id="input2"></textarea>
+          <br>
+          <button class="sendit">Send It</button>
+        </form>
+      </div>
+      <div class="contactpic">
+        <img src="https://picsum.photos/500/400?random=6"><br><br>
+        <span class="contacttxt">Lorem ipsum dol elit, sed do eiusmod se cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupiident, sunt in culpam id est laborum.</span>
+      </div>
+    </div>
+  </body>
+</html>
